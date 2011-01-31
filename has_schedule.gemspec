@@ -25,19 +25,13 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "has_schedule.gemspec",
-    "lib/has_schedule.rb",
-    "test/helper.rb",
-    "test/test_has_schedule.rb"
+    "lib/has_schedule.rb"
   ]
   s.homepage = %q{http://github.com/ryansch/has_schedule}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{Adds schedule serialization for use with ice_cube}
-  s.test_files = [
-    "test/helper.rb",
-    "test/test_has_schedule.rb"
-  ]
 
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
