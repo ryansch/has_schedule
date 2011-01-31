@@ -15,8 +15,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "has_schedule"
   gem.homepage = "http://github.com/ryansch/has_schedule"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Adds schedule serialization for use with ice_cube}
+  gem.description = %Q{Exposes an ice_cube schedule object and serializes it.}
   gem.email = "ryan@instanceinc.com"
   gem.authors = ["Ryan Schlesinger"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
