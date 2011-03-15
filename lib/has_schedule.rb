@@ -7,8 +7,6 @@ module HasSchedule
 		def has_schedule
 			send :include, InstanceMethods
 
-			attr_writer :schedule
-
 			alias_method_chain :reload, :schedule
 			before_save :save_with_schedule
 		end
@@ -21,7 +19,15 @@ module HasSchedule
 		end
 		
 		def save_with_schedule
-			self.schedule_yaml = @schedule.to_yaml unless @schedule.nil?
+			self.schedule_yaml = @schedule.andand.to_yaml
+		end
+
+		def schedule=(schedule)
+			@schedule = schedule
+
+			if @schedule.nil?
+				save_with_schedule
+			end
 		end
 
 		def schedule
