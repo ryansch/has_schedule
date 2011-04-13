@@ -1,3 +1,5 @@
+require 'andand'
+
 module HasSchedule
 	def self.included(base)
 		base.send :extend, ClassMethods
@@ -38,10 +40,10 @@ module HasSchedule
 
 		def schedule
 			@schedule ||= if self.schedule_yaml.blank? 
-											nil
-										else
-											IceCube::Schedule.from_yaml(self.schedule_yaml)
-										end
+				nil
+			else
+				IceCube::Schedule.from_yaml(self.schedule_yaml)
+			end
 		end
 	end
 end

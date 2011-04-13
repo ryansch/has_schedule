@@ -1,6 +1,7 @@
 source :rubygems
 
 gem "ice_cube"
+gem "andand", "1.3.1"
 
 group :development do
   gem "shoulda", ">= 0"
