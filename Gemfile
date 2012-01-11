@@ -1,11 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
-gem "ice_cube"
-gem "andand", "1.3.1"
-
-group :development do
-  gem "shoulda", ">= 0"
-  gem "bundler", "~> 1.0.0"
-  gem "jeweler", "~> 1.5.2"
-  gem "rcov", ">= 0"
-end
+# Specify your gem's dependencies in has_schedule.gemspec
+gemspec
