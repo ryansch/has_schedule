@@ -16,5 +16,5 @@ Gem::Specification.new do |gem|
   gem.version       = HasSchedule::VERSION
 
   gem.add_dependency 'ice_cube'
-  gem.add_dependency 'andand', '~> 1.3.1'
+  gem.add_dependency 'ryansch-andand', '~> 1.3.2'
 end
